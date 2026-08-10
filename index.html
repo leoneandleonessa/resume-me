@@ -7,7 +7,7 @@
     <meta name="description" content="Professional resume of Fauzan Azima - Cloud Architect & AWS Technical Consultant with 6+ years of experience in IT and Cloud Infrastructure.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">FA</a>
+            <a href="#hero" class="nav-logo">FA<span>.</span></a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -34,40 +34,47 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-particles" id="particles"></div>
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-cloud"></i> Cloud Professional
-            </div>
-            <h1 class="hero-title">
-                <span class="greeting">Hi, I'm</span>
-                <span class="name">Fauzan Azima</span>
-            </h1>
-            <p class="hero-subtitle">Cloud Architect | AWS Technical Consultant</p>
-            <p class="hero-description">
-                Architecting secure, scalable, and high-performing cloud solutions for enterprises 
-                — driven by 6+ years of hands-on experience across infrastructure, migration, and technical consulting.
-            </p>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i> Get in Touch
-                </a>
-                <a href="#experience" class="btn btn-secondary">
-                    <i class="fas fa-briefcase"></i> View Experience
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">8</span>
-                    <span class="stat-label">Certifications</span>
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-cloud"></i> Cloud Professional
                 </div>
-                <div class="stat">
-                    <span class="stat-number">6+</span>
-                    <span class="stat-label">Years Experience</span>
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Fauzan Azima</span>
+                </h1>
+                <p class="hero-subtitle">Cloud Architect | AWS Technical Consultant</p>
+                <p class="hero-description">
+                    Architecting secure, scalable, and high-performing cloud solutions for enterprises 
+                    — driven by 6+ years of hands-on experience across infrastructure, migration, and technical consulting.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                    <a href="#experience" class="btn btn-outline">
+                        <i class="fas fa-briefcase"></i> View Experience
+                    </a>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">5</span>
-                    <span class="stat-label">Companies</span>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-wrapper">
+                    <img src="assets/photo.png" alt="Fauzan Azima - Cloud Architect">
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,10 +86,7 @@
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon"><i class="fas fa-user"></i></span>
-                About Me
-            </h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
@@ -130,10 +134,7 @@
     <!-- Experience Section -->
     <section class="section section-alt" id="experience">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon"><i class="fas fa-briefcase"></i></span>
-                Work Experience
-            </h2>
+            <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
                 <!-- Job 1 -->
                 <div class="timeline-item">
@@ -144,9 +145,7 @@
                                 <h3>AWS Technical Consultant</h3>
                                 <p class="company">PT Mitra Integrasi Informatika (Metrodata Group)</p>
                             </div>
-                            <span class="timeline-date">
-                                <i class="fas fa-calendar-alt"></i> Aug 2023 - Present
-                            </span>
+                            <span class="timeline-date">Aug 2023 - Present</span>
                         </div>
                         <ul class="timeline-details">
                             <li>Analyzing customer needs and recommending appropriate AWS solutions</li>
@@ -173,9 +172,7 @@
                                 <h3>Cloud Architect</h3>
                                 <p class="company">PT Innovation Cloud Services (ICS Compute)</p>
                             </div>
-                            <span class="timeline-date">
-                                <i class="fas fa-calendar-alt"></i> Jan 2023 - Aug 2023
-                            </span>
+                            <span class="timeline-date">Jan 2023 - Aug 2023</span>
                         </div>
                         <ul class="timeline-details">
                             <li>Leading technical design sessions and architecting solutions that meet customer goals</li>
@@ -200,9 +197,7 @@
                                 <h3>Cloud Engineer</h3>
                                 <p class="company">PT Innovation Cloud Services (ICS Compute)</p>
                             </div>
-                            <span class="timeline-date">
-                                <i class="fas fa-calendar-alt"></i> Mar 2022 - Dec 2022
-                            </span>
+                            <span class="timeline-date">Mar 2022 - Dec 2022</span>
                         </div>
                         <ul class="timeline-details">
                             <li>Migrating infrastructure from On-Premise/Another Cloud/AWS to AWS Cloud</li>
@@ -227,9 +222,7 @@
                                 <h3>IT Helpdesk Staff & Support Engineer</h3>
                                 <p class="company">PT Indonesian Cloud</p>
                             </div>
-                            <span class="timeline-date">
-                                <i class="fas fa-calendar-alt"></i> Jan 2020 - Apr 2022
-                            </span>
+                            <span class="timeline-date">Jan 2020 - Apr 2022</span>
                         </div>
                         <ul class="timeline-details">
                             <li>First level customer support for troubleshooting (Network, OS Linux Server, OS Windows Server)</li>
@@ -258,9 +251,7 @@
                                 <h3>IT Junior Consultant</h3>
                                 <p class="company">PT Sigma Cipta Caraka (Telkomsigma)</p>
                             </div>
-                            <span class="timeline-date">
-                                <i class="fas fa-calendar-alt"></i> Mar 2018 - Feb 2019
-                            </span>
+                            <span class="timeline-date">Mar 2018 - Feb 2019</span>
                         </div>
                         <ul class="timeline-details">
                             <li>Web Programmer with PHP Language</li>
@@ -282,10 +273,7 @@
     <!-- Certifications Section -->
     <section class="section" id="certifications">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon"><i class="fas fa-certificate"></i></span>
-                Certifications
-            </h2>
+            <h2 class="section-title">Certifications</h2>
             <p class="section-subtitle">
                 <a href="https://www.credly.com/users/fauzan-azima.8628ac21" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-external-link-alt"></i> View all badges on Credly
@@ -363,10 +351,7 @@
     <!-- Education Section -->
     <section class="section section-alt" id="education">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon"><i class="fas fa-graduation-cap"></i></span>
-                Education & Training
-            </h2>
+            <h2 class="section-title">Education & Training</h2>
             <div class="education-grid">
                 <div class="edu-card">
                     <div class="edu-logo">
@@ -403,10 +388,7 @@
     <!-- Skills Section -->
     <section class="section" id="skills">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon"><i class="fas fa-tools"></i></span>
-                Skills & Expertise
-            </h2>
+            <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3><i class="fab fa-aws"></i> AWS Services</h3>
@@ -478,10 +460,7 @@
     <!-- Contact Section -->
     <section class="section section-alt" id="contact">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon"><i class="fas fa-envelope"></i></span>
-                Get in Touch
-            </h2>
+            <h2 class="section-title">Get in Touch</h2>
             <p class="contact-intro">
                 Interested in working together? Feel free to reach out through any of the channels below.
             </p>
