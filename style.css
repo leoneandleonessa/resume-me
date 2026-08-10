@@ -699,6 +699,26 @@ img {
     color: var(--accent);
 }
 
+.edu-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.edu-card:hover .edu-logo img {
+    transform: scale(1.08);
+}
+
 .edu-card h3 {
     font-size: 1.15rem;
     font-weight: 700;
