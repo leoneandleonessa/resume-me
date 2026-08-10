@@ -588,6 +588,26 @@ img {
     font-size: 1.5rem;
 }
 
+.cert-badge-img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-badge-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.cert-card:hover .cert-badge-img img {
+    transform: scale(1.1);
+}
+
 .cert-professional .cert-badge {
     background: rgba(255, 107, 53, 0.1);
     color: var(--cert-professional);
