@@ -44,7 +44,7 @@ window.addEventListener('scroll', highlightNavLink);
 
 // ===== Scroll Reveal =====
 function revealOnScroll() {
-    const elements = document.querySelectorAll('.timeline-item, .cert-card, .edu-card, .highlight-card, .contact-card, .skill-category');
+    const elements = document.querySelectorAll('.timeline-item, .cert-card, .edu-card, .highlight-card, .contact-card, .skill-category, .project-card');
     elements.forEach(el => {
         const top = el.getBoundingClientRect().top;
         if (top < window.innerHeight - 80) {
@@ -99,3 +99,23 @@ const heroObserver = new IntersectionObserver((entries) => {
 
 const heroSection = document.getElementById('hero');
 if (heroSection) heroObserver.observe(heroSection);
+
+// ===== Projects Filter =====
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        projectCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    });
+});
