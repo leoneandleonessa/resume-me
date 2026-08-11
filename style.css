@@ -600,6 +600,10 @@ img {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
 }
 
 .cert-card::before {
